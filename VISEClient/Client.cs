@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
-using VISEClient.SoapEndpoint;
+using VIESClient.SoapEndpoint;
 
-namespace VISEClient
+namespace VIESClient
 {
     public class Client
     {
-        public VISEResponse CheckVATNumber(string countryCode, string vatNumber)
+        public VIESResponse CheckVATNumber(string countryCode, string vatNumber)
         {
             var vClient = new checkVatPortTypeClient();
             var isValid = false;
@@ -15,7 +15,7 @@ namespace VISEClient
                 string name;
                 string address;
                 vClient.checkVat(ref countryCode, ref vatNumber, out isValid, out name, out address);
-                return new VISEResponse()
+                return new VIESResponse()
                 {
                     IsValid = isValid,
                     Name = name,
@@ -26,8 +26,8 @@ namespace VISEClient
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"VISE threw an exception {ex.Message}");
-                return new VISEResponse()
+                Debug.WriteLine($"VIES threw an exception {ex.Message}");
+                return new VIESResponse()
                 {
                     IsValid = isValid,
                     CountryCode = countryCode,
@@ -37,7 +37,7 @@ namespace VISEClient
         }
     }
 
-    public class VISEResponse
+    public class VIESResponse
     {
         public bool IsValid { get; set; }
         public string Name { get; set; }

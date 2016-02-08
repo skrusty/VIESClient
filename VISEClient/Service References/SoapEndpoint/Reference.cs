@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VISEClient.SoapEndpoint {
+namespace VIESClient.SoapEndpoint {
     using System.Runtime.Serialization;
     
     
@@ -31,16 +31,16 @@ namespace VISEClient.SoapEndpoint {
     public interface checkVatPortType {
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        VISEClient.SoapEndpoint.checkVatResponse checkVat(VISEClient.SoapEndpoint.checkVatRequest request);
+        VIESClient.SoapEndpoint.checkVatResponse checkVat(VIESClient.SoapEndpoint.checkVatRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<VISEClient.SoapEndpoint.checkVatResponse> checkVatAsync(VISEClient.SoapEndpoint.checkVatRequest request);
+        System.Threading.Tasks.Task<VIESClient.SoapEndpoint.checkVatResponse> checkVatAsync(VIESClient.SoapEndpoint.checkVatRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        VISEClient.SoapEndpoint.checkVatApproxResponse checkVatApprox(VISEClient.SoapEndpoint.checkVatApproxRequest request);
+        VIESClient.SoapEndpoint.checkVatApproxResponse checkVatApprox(VIESClient.SoapEndpoint.checkVatApproxRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<VISEClient.SoapEndpoint.checkVatApproxResponse> checkVatApproxAsync(VISEClient.SoapEndpoint.checkVatApproxRequest request);
+        System.Threading.Tasks.Task<VIESClient.SoapEndpoint.checkVatApproxResponse> checkVatApproxAsync(VIESClient.SoapEndpoint.checkVatApproxRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -49,12 +49,12 @@ namespace VISEClient.SoapEndpoint {
     public partial class checkVatRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="checkVat", Namespace="urn:ec.europa.eu:taxud:vies:services:checkVat:types", Order=0)]
-        public VISEClient.SoapEndpoint.checkVatRequestBody Body;
+        public VIESClient.SoapEndpoint.checkVatRequestBody Body;
         
         public checkVatRequest() {
         }
         
-        public checkVatRequest(VISEClient.SoapEndpoint.checkVatRequestBody Body) {
+        public checkVatRequest(VIESClient.SoapEndpoint.checkVatRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -85,12 +85,12 @@ namespace VISEClient.SoapEndpoint {
     public partial class checkVatResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="checkVatResponse", Namespace="urn:ec.europa.eu:taxud:vies:services:checkVat:types", Order=0)]
-        public VISEClient.SoapEndpoint.checkVatResponseBody Body;
+        public VIESClient.SoapEndpoint.checkVatResponseBody Body;
         
         public checkVatResponse() {
         }
         
-        public checkVatResponse(VISEClient.SoapEndpoint.checkVatResponseBody Body) {
+        public checkVatResponse(VIESClient.SoapEndpoint.checkVatResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -137,12 +137,12 @@ namespace VISEClient.SoapEndpoint {
     public partial class checkVatApproxRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="checkVatApprox", Namespace="urn:ec.europa.eu:taxud:vies:services:checkVat:types", Order=0)]
-        public VISEClient.SoapEndpoint.checkVatApproxRequestBody Body;
+        public VIESClient.SoapEndpoint.checkVatApproxRequestBody Body;
         
         public checkVatApproxRequest() {
         }
         
-        public checkVatApproxRequest(VISEClient.SoapEndpoint.checkVatApproxRequestBody Body) {
+        public checkVatApproxRequest(VIESClient.SoapEndpoint.checkVatApproxRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -201,12 +201,12 @@ namespace VISEClient.SoapEndpoint {
     public partial class checkVatApproxResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="checkVatApproxResponse", Namespace="urn:ec.europa.eu:taxud:vies:services:checkVat:types", Order=0)]
-        public VISEClient.SoapEndpoint.checkVatApproxResponseBody Body;
+        public VIESClient.SoapEndpoint.checkVatApproxResponseBody Body;
         
         public checkVatApproxResponse() {
         }
         
-        public checkVatApproxResponse(VISEClient.SoapEndpoint.checkVatApproxResponseBody Body) {
+        public checkVatApproxResponse(VIESClient.SoapEndpoint.checkVatApproxResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -247,19 +247,19 @@ namespace VISEClient.SoapEndpoint {
         public string traderCity;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=10)]
-        public VISEClient.SoapEndpoint.matchCode traderNameMatch;
+        public VIESClient.SoapEndpoint.matchCode traderNameMatch;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=11)]
-        public VISEClient.SoapEndpoint.matchCode traderCompanyTypeMatch;
+        public VIESClient.SoapEndpoint.matchCode traderCompanyTypeMatch;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=12)]
-        public VISEClient.SoapEndpoint.matchCode traderStreetMatch;
+        public VIESClient.SoapEndpoint.matchCode traderStreetMatch;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=13)]
-        public VISEClient.SoapEndpoint.matchCode traderPostcodeMatch;
+        public VIESClient.SoapEndpoint.matchCode traderPostcodeMatch;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=14)]
-        public VISEClient.SoapEndpoint.matchCode traderCityMatch;
+        public VIESClient.SoapEndpoint.matchCode traderCityMatch;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
         public string requestIdentifier;
@@ -278,11 +278,11 @@ namespace VISEClient.SoapEndpoint {
                     string traderStreet, 
                     string traderPostcode, 
                     string traderCity, 
-                    VISEClient.SoapEndpoint.matchCode traderNameMatch, 
-                    VISEClient.SoapEndpoint.matchCode traderCompanyTypeMatch, 
-                    VISEClient.SoapEndpoint.matchCode traderStreetMatch, 
-                    VISEClient.SoapEndpoint.matchCode traderPostcodeMatch, 
-                    VISEClient.SoapEndpoint.matchCode traderCityMatch, 
+                    VIESClient.SoapEndpoint.matchCode traderNameMatch, 
+                    VIESClient.SoapEndpoint.matchCode traderCompanyTypeMatch, 
+                    VIESClient.SoapEndpoint.matchCode traderStreetMatch, 
+                    VIESClient.SoapEndpoint.matchCode traderPostcodeMatch, 
+                    VIESClient.SoapEndpoint.matchCode traderCityMatch, 
                     string requestIdentifier) {
             this.countryCode = countryCode;
             this.vatNumber = vatNumber;
@@ -304,12 +304,12 @@ namespace VISEClient.SoapEndpoint {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface checkVatPortTypeChannel : VISEClient.SoapEndpoint.checkVatPortType, System.ServiceModel.IClientChannel {
+    public interface checkVatPortTypeChannel : VIESClient.SoapEndpoint.checkVatPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class checkVatPortTypeClient : System.ServiceModel.ClientBase<VISEClient.SoapEndpoint.checkVatPortType>, VISEClient.SoapEndpoint.checkVatPortType {
+    public partial class checkVatPortTypeClient : System.ServiceModel.ClientBase<VIESClient.SoapEndpoint.checkVatPortType>, VIESClient.SoapEndpoint.checkVatPortType {
         
         public checkVatPortTypeClient() {
         }
@@ -331,16 +331,16 @@ namespace VISEClient.SoapEndpoint {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        VISEClient.SoapEndpoint.checkVatResponse VISEClient.SoapEndpoint.checkVatPortType.checkVat(VISEClient.SoapEndpoint.checkVatRequest request) {
+        VIESClient.SoapEndpoint.checkVatResponse VIESClient.SoapEndpoint.checkVatPortType.checkVat(VIESClient.SoapEndpoint.checkVatRequest request) {
             return base.Channel.checkVat(request);
         }
         
         public string checkVat(ref string countryCode, ref string vatNumber, out bool valid, out string name, out string address) {
-            VISEClient.SoapEndpoint.checkVatRequest inValue = new VISEClient.SoapEndpoint.checkVatRequest();
-            inValue.Body = new VISEClient.SoapEndpoint.checkVatRequestBody();
+            VIESClient.SoapEndpoint.checkVatRequest inValue = new VIESClient.SoapEndpoint.checkVatRequest();
+            inValue.Body = new VIESClient.SoapEndpoint.checkVatRequestBody();
             inValue.Body.countryCode = countryCode;
             inValue.Body.vatNumber = vatNumber;
-            VISEClient.SoapEndpoint.checkVatResponse retVal = ((VISEClient.SoapEndpoint.checkVatPortType)(this)).checkVat(inValue);
+            VIESClient.SoapEndpoint.checkVatResponse retVal = ((VIESClient.SoapEndpoint.checkVatPortType)(this)).checkVat(inValue);
             countryCode = retVal.Body.countryCode;
             vatNumber = retVal.Body.vatNumber;
             valid = retVal.Body.valid;
@@ -350,20 +350,20 @@ namespace VISEClient.SoapEndpoint {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<VISEClient.SoapEndpoint.checkVatResponse> VISEClient.SoapEndpoint.checkVatPortType.checkVatAsync(VISEClient.SoapEndpoint.checkVatRequest request) {
+        System.Threading.Tasks.Task<VIESClient.SoapEndpoint.checkVatResponse> VIESClient.SoapEndpoint.checkVatPortType.checkVatAsync(VIESClient.SoapEndpoint.checkVatRequest request) {
             return base.Channel.checkVatAsync(request);
         }
         
-        public System.Threading.Tasks.Task<VISEClient.SoapEndpoint.checkVatResponse> checkVatAsync(string countryCode, string vatNumber) {
-            VISEClient.SoapEndpoint.checkVatRequest inValue = new VISEClient.SoapEndpoint.checkVatRequest();
-            inValue.Body = new VISEClient.SoapEndpoint.checkVatRequestBody();
+        public System.Threading.Tasks.Task<VIESClient.SoapEndpoint.checkVatResponse> checkVatAsync(string countryCode, string vatNumber) {
+            VIESClient.SoapEndpoint.checkVatRequest inValue = new VIESClient.SoapEndpoint.checkVatRequest();
+            inValue.Body = new VIESClient.SoapEndpoint.checkVatRequestBody();
             inValue.Body.countryCode = countryCode;
             inValue.Body.vatNumber = vatNumber;
-            return ((VISEClient.SoapEndpoint.checkVatPortType)(this)).checkVatAsync(inValue);
+            return ((VIESClient.SoapEndpoint.checkVatPortType)(this)).checkVatAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        VISEClient.SoapEndpoint.checkVatApproxResponse VISEClient.SoapEndpoint.checkVatPortType.checkVatApprox(VISEClient.SoapEndpoint.checkVatApproxRequest request) {
+        VIESClient.SoapEndpoint.checkVatApproxResponse VIESClient.SoapEndpoint.checkVatPortType.checkVatApprox(VIESClient.SoapEndpoint.checkVatApproxRequest request) {
             return base.Channel.checkVatApprox(request);
         }
         
@@ -379,14 +379,14 @@ namespace VISEClient.SoapEndpoint {
                     string requesterVatNumber, 
                     out bool valid, 
                     out string traderAddress, 
-                    out VISEClient.SoapEndpoint.matchCode traderNameMatch, 
-                    out VISEClient.SoapEndpoint.matchCode traderCompanyTypeMatch, 
-                    out VISEClient.SoapEndpoint.matchCode traderStreetMatch, 
-                    out VISEClient.SoapEndpoint.matchCode traderPostcodeMatch, 
-                    out VISEClient.SoapEndpoint.matchCode traderCityMatch, 
+                    out VIESClient.SoapEndpoint.matchCode traderNameMatch, 
+                    out VIESClient.SoapEndpoint.matchCode traderCompanyTypeMatch, 
+                    out VIESClient.SoapEndpoint.matchCode traderStreetMatch, 
+                    out VIESClient.SoapEndpoint.matchCode traderPostcodeMatch, 
+                    out VIESClient.SoapEndpoint.matchCode traderCityMatch, 
                     out string requestIdentifier) {
-            VISEClient.SoapEndpoint.checkVatApproxRequest inValue = new VISEClient.SoapEndpoint.checkVatApproxRequest();
-            inValue.Body = new VISEClient.SoapEndpoint.checkVatApproxRequestBody();
+            VIESClient.SoapEndpoint.checkVatApproxRequest inValue = new VIESClient.SoapEndpoint.checkVatApproxRequest();
+            inValue.Body = new VIESClient.SoapEndpoint.checkVatApproxRequestBody();
             inValue.Body.countryCode = countryCode;
             inValue.Body.vatNumber = vatNumber;
             inValue.Body.traderName = traderName;
@@ -396,7 +396,7 @@ namespace VISEClient.SoapEndpoint {
             inValue.Body.traderCity = traderCity;
             inValue.Body.requesterCountryCode = requesterCountryCode;
             inValue.Body.requesterVatNumber = requesterVatNumber;
-            VISEClient.SoapEndpoint.checkVatApproxResponse retVal = ((VISEClient.SoapEndpoint.checkVatPortType)(this)).checkVatApprox(inValue);
+            VIESClient.SoapEndpoint.checkVatApproxResponse retVal = ((VIESClient.SoapEndpoint.checkVatPortType)(this)).checkVatApprox(inValue);
             countryCode = retVal.Body.countryCode;
             vatNumber = retVal.Body.vatNumber;
             valid = retVal.Body.valid;
@@ -416,13 +416,13 @@ namespace VISEClient.SoapEndpoint {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<VISEClient.SoapEndpoint.checkVatApproxResponse> VISEClient.SoapEndpoint.checkVatPortType.checkVatApproxAsync(VISEClient.SoapEndpoint.checkVatApproxRequest request) {
+        System.Threading.Tasks.Task<VIESClient.SoapEndpoint.checkVatApproxResponse> VIESClient.SoapEndpoint.checkVatPortType.checkVatApproxAsync(VIESClient.SoapEndpoint.checkVatApproxRequest request) {
             return base.Channel.checkVatApproxAsync(request);
         }
         
-        public System.Threading.Tasks.Task<VISEClient.SoapEndpoint.checkVatApproxResponse> checkVatApproxAsync(string countryCode, string vatNumber, string traderName, string traderCompanyType, string traderStreet, string traderPostcode, string traderCity, string requesterCountryCode, string requesterVatNumber) {
-            VISEClient.SoapEndpoint.checkVatApproxRequest inValue = new VISEClient.SoapEndpoint.checkVatApproxRequest();
-            inValue.Body = new VISEClient.SoapEndpoint.checkVatApproxRequestBody();
+        public System.Threading.Tasks.Task<VIESClient.SoapEndpoint.checkVatApproxResponse> checkVatApproxAsync(string countryCode, string vatNumber, string traderName, string traderCompanyType, string traderStreet, string traderPostcode, string traderCity, string requesterCountryCode, string requesterVatNumber) {
+            VIESClient.SoapEndpoint.checkVatApproxRequest inValue = new VIESClient.SoapEndpoint.checkVatApproxRequest();
+            inValue.Body = new VIESClient.SoapEndpoint.checkVatApproxRequestBody();
             inValue.Body.countryCode = countryCode;
             inValue.Body.vatNumber = vatNumber;
             inValue.Body.traderName = traderName;
@@ -432,7 +432,7 @@ namespace VISEClient.SoapEndpoint {
             inValue.Body.traderCity = traderCity;
             inValue.Body.requesterCountryCode = requesterCountryCode;
             inValue.Body.requesterVatNumber = requesterVatNumber;
-            return ((VISEClient.SoapEndpoint.checkVatPortType)(this)).checkVatApproxAsync(inValue);
+            return ((VIESClient.SoapEndpoint.checkVatPortType)(this)).checkVatApproxAsync(inValue);
         }
     }
 }
