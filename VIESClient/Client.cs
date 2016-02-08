@@ -15,7 +15,7 @@ namespace VIESClient
                 string name;
                 string address;
                 vClient.checkVat(ref countryCode, ref vatNumber, out isValid, out name, out address);
-                return new VIESResponse()
+                return new VIESResponse
                 {
                     IsValid = isValid,
                     Name = name,
@@ -27,7 +27,7 @@ namespace VIESClient
             catch (Exception ex)
             {
                 Debug.WriteLine($"VIES threw an exception {ex.Message}");
-                return new VIESResponse()
+                return new VIESResponse
                 {
                     IsValid = isValid,
                     CountryCode = countryCode,

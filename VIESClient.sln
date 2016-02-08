@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIESClient", "VISEClient\VIESClient.csproj", "{3BBD1747-ECD4-46F4-BCF7-4D1803E87E78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIESClient", "VIESClient\VIESClient.csproj", "{3BBD1747-ECD4-46F4-BCF7-4D1803E87E78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIESDemo", "VISEDemo\VIESDemo.csproj", "{8A7CF517-03F7-4011-89FE-C837ACA9D684}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIESDemo", "VIESDemo\VIESDemo.csproj", "{8A7CF517-03F7-4011-89FE-C837ACA9D684}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

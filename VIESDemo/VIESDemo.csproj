@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VISEClient\VIESClient.csproj">
+    <ProjectReference Include="..\VIESClient\VIESClient.csproj">
       <Project>{3bbd1747-ecd4-46f4-bcf7-4d1803e87e78}</Project>
       <Name>VIESClient</Name>
     </ProjectReference>
